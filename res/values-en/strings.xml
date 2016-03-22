@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!--
+    <string name="app_name">Android串口助手</string>
+    <string name="action_settings">Settings</string>
+    <string name="serialClose">\n关闭\n</string>
+    <string name="serialOpen">\n打开\n</string>
+    <string name="togBtnHEX">\nHEX\n</string>
+    <string name="togBtnASCII">\nASCII\n</string>
+    <string name="togBtnReceive">\n接受\n</string>
+    <string name="togBtnStopReceive">\n停止\n</string>
+    <string name="clearButton">\n清空\n</string>
+    <string name="sendButton">\n发送\n</string>
+	<string name="per100ms">Per100ms</string>
+	<string name="per500ms">Per500ms</string>
+	<string name="per1000ms">Per1s</string>
+	<string name="serial">串口：</string>
+	<string name="baudrate">波特率：</string>
+	<string name="databits">数据位：</string>
+	<string name="stopbits">停止位：</string>
+	<string name="paritybits">校验位：</string>
+	<string name="acceptdata">接受数据</string>
+	<string name="senddata">发送数据</string>
+	<string name="inputwarn">请输入有效HEX字符组合（"0-9","A-F","a-f"）！</string>
+    -->
+
+    <string name="app_name">Android Serial Debugging Assistant v2</string>
+    <string name="action_settings">Settings</string>
+    <string name="serialClose">\nClose\n</string>
+    <string name="serialOpen">\nOpen\n</string>
+    <string name="togBtnHEX">\nHEX\n</string>
+    <string name="togBtnASCII">\nASCII\n</string>
+    <string name="togBtnReceive">\nReceive\n</string>
+    <string name="togBtnStopReceive">\nStopReceive\n</string>
+    <string name="clearButton">\nClear\n</string>
+    <string name="sendButton">\nSend\n</string>
+    <string name="per100ms">Per100ms</string>
+    <string name="per500ms">Per500ms</string>
+    <string name="per1000ms">Per1s</string>
+    <string name="serial">Port：</string>
+    <string name="baudrate">Baudrate：</string>
+    <string name="databits">Data Bit：</string>
+    <string name="stopbits">Stop Bit：</string>
+    <string name="paritybits">Parity Bit：</string>
+    <string name="acceptdata">Accept Data</string>
+    <string name="senddata">Send Data</string>
+    <string name="inputwarn">Please enter a valid HEX character combinations（"0-9","A-F","a-f"）！</string>
+
+</resources>

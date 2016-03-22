@@ -1,0 +1,49 @@
+-- Merging decision tree log ---
+manifest
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:2:1-28:12
+	package
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:3:5-31
+	android:versionName
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:5:5-30
+		INJECTED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml
+		INJECTED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml
+	android:versionCode
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:4:5-28
+		INJECTED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml
+		INJECTED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml
+	xmlns:android
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:2:11-69
+uses-sdk
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:7:5-9:41
+	android:targetSdkVersion
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:9:9-38
+	android:minSdkVersion
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:8:9-34
+application
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:11:5-26:19
+	android:label
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:14:9-41
+	android:allowBackup
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:12:9-35
+	android:icon
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:13:9-45
+	android:theme
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:15:9-40
+activity#com.dwin.activity.MainActivity
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:16:9-25:20
+	android:label
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:18:13-45
+	android:launchMode
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:19:13-44
+	android:name
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:17:13-58
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:20:13-24:29
+action#android.intent.action.MAIN
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:21:17-69
+	android:name
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:21:25-66
+category#android.intent.category.LAUNCHER
+ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:23:17-77
+	android:name
+		ADDED from D:\Users\ICUI4CU\Android\DWIN\DWIN\AndroidManifest.xml:23:27-74

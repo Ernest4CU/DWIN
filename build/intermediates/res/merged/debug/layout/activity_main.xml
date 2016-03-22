@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="horizontal" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:orientation="vertical" >
+
+        <TableLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:orientation="vertical" >
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/serial"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/choose_seriaPort_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/baudrate"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/choose_baudRate_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/databits"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/choose_databits_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/stopbits"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/choose_stopbits_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" >
+                </Spinner>
+            </TableRow>
+
+            <TableRow>
+
+                <TextView
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/paritybits"
+                    android:textSize="20sp" />
+
+                <Spinner
+                    android:id="@+id/choose_parity_spinner"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60dp" >
+                </Spinner>
+            </TableRow>
+
+            <!-- layout_weight使两个按钮平均布局 -->
+
+            <TableRow>
+
+                <ToggleButton
+                    android:id="@+id/togBtnSerial"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/serialOpen"
+                    android:textOn="@string/serialClose"
+                    android:textSize="20sp" />
+            </TableRow>
+        </TableLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/acceptdata"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/showmsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:focusable="false"
+                android:gravity="left|bottom"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="10"
+                android:textSize="20sp" />
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/togBtnShowDateType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/togBtnASCII"
+                    android:textOn="@string/togBtnHEX"
+                    android:textSize="20sp" />
+
+                <ToggleButton
+                    android:id="@+id/togBtnReciveDate"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/togBtnReceive"
+                    android:textOn="@string/togBtnStopReceive"
+                    android:textSize="20sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <Button
+                    android:id="@+id/clearButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="@string/clearButton"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="center_horizontal"
+                android:text="@string/senddata"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/sendmsg"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:gravity="left|bottom"
+                android:hint="edit here"
+                android:inputType="textMultiLine"
+                android:maxLines="10"
+                android:minLines="10"
+                android:textSize="20sp" />
+            <!-- android:digits="0123456789abcdefABCDEF " -->
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal" >
+
+                <ToggleButton
+                    android:id="@+id/togBtnSendDateType"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:textOff="@string/togBtnASCII"
+                    android:textOn="@string/togBtnHEX"
+                    android:textSize="20sp" />
+
+                <Button
+                    android:id="@+id/sendButton"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_weight="1"
+                    android:text="@+string/sendButton"
+                    android:textSize="20sp" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal" >
+
+            <ToggleButton
+                android:id="@+id/togBtnSendPer100ms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textOff="@string/per100ms"
+                android:textOn="@string/per100ms"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/togBtnSendPer500ms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textOff="@string/per500ms"
+                android:textOn="@string/per500ms"
+                android:textSize="20sp" />
+
+            <ToggleButton
+                android:id="@+id/togBtnSendPer1000ms"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_weight="1"
+                android:textOff="@string/per1000ms"
+                android:textOn="@string/per1000ms"
+                android:textSize="20sp" />
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>
