@@ -1,6 +1,10 @@
 [
     {
-        "merged": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
-        "source": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\layout\\activity_main.xml"
+        "merged": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\layout\\activity_main.xml",
+        "source": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\layout\\activity_main.xml"
+    },
+    {
+        "merged": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\layout\\factivity.xml",
+        "source": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\layout\\factivity.xml"
     }
 ]

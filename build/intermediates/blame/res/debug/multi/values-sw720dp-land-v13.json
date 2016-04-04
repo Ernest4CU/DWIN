@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
+        "outputFile": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\values-sw720dp-land-v13\\values-sw720dp-land-v13.xml",
         "map": [
             {
                 "to": {
@@ -11,13 +11,13 @@
                     "endOffset": 109
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values-sw720dp-land\\dimens.xml",
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values-sw720dp-land\\dimens.xml",
                     "position": {
                         "startLine": 6,
                         "startColumn": 4,
-                        "startOffset": 205,
+                        "startOffset": 206,
                         "endColumn": 58,
-                        "endOffset": 259
+                        "endOffset": 260
                     }
                 }
             }

@@ -1,6 +1,14 @@
 [
     {
-        "merged": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
-        "source": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\drawable-hdpi\\ic_launcher.png"
+        "merged": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\ic_launcher.png",
+        "source": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\drawable-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\up.png",
+        "source": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\drawable-hdpi\\up.png"
+    },
+    {
+        "merged": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4\\down.png",
+        "source": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\drawable-hdpi\\down.png"
     }
 ]

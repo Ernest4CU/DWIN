@@ -1,6 +1,6 @@
 [
     {
-        "outputFile": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
+        "outputFile": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\build\\intermediates\\res\\merged\\debug\\values\\values.xml",
         "map": [
             {
                 "to": {
@@ -11,7 +11,14 @@
                     "endOffset": 108
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\dimens.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 3,
+                        "startColumn": 4,
+                        "startOffset": 92,
+                        "endColumn": 57,
+                        "endOffset": 145
+                    }
                 }
             },
             {
@@ -23,7 +30,14 @@
                     "endOffset": 164
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\dimens.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\dimens.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 151,
+                        "endColumn": 55,
+                        "endOffset": 202
+                    }
                 }
             },
             {
@@ -35,7 +49,14 @@
                     "endOffset": 208
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 21,
+                        "startColumn": 4,
+                        "startOffset": 906,
+                        "endColumn": 43,
+                        "endOffset": 945
+                    }
                 }
             },
             {
@@ -47,7 +68,14 @@
                     "endOffset": 261
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 4,
+                        "startOffset": 107,
+                        "endColumn": 52,
+                        "endOffset": 155
+                    }
                 }
             },
             {
@@ -59,13 +87,13 @@
                     "endOffset": 308
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml",
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
                     "position": {
                         "startLine": 3,
                         "startColumn": 4,
-                        "startOffset": 56,
+                        "startOffset": 59,
                         "endColumn": 46,
-                        "endOffset": 98
+                        "endOffset": 101
                     }
                 }
             },
@@ -78,7 +106,14 @@
                     "endOffset": 350
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 17,
+                        "startColumn": 4,
+                        "startOffset": 732,
+                        "endColumn": 41,
+                        "endOffset": 769
+                    }
                 }
             },
             {
@@ -90,7 +125,14 @@
                     "endOffset": 397
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 11,
+                        "startColumn": 4,
+                        "startOffset": 458,
+                        "endColumn": 46,
+                        "endOffset": 500
+                    }
                 }
             },
             {
@@ -102,7 +144,14 @@
                     "endOffset": 439
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 18,
+                        "startColumn": 4,
+                        "startOffset": 775,
+                        "endColumn": 41,
+                        "endOffset": 812
+                    }
                 }
             },
             {
@@ -114,7 +163,14 @@
                     "endOffset": 510
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 23,
+                        "startColumn": 4,
+                        "startOffset": 994,
+                        "endColumn": 70,
+                        "endOffset": 1060
+                    }
                 }
             },
             {
@@ -126,7 +182,14 @@
                     "endOffset": 554
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 20,
+                        "startColumn": 4,
+                        "startOffset": 861,
+                        "endColumn": 43,
+                        "endOffset": 900
+                    }
                 }
             },
             {
@@ -138,7 +201,14 @@
                     "endOffset": 598
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 647,
+                        "endColumn": 43,
+                        "endOffset": 686
+                    }
                 }
             },
             {
@@ -150,7 +220,14 @@
                     "endOffset": 644
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 13,
+                        "startColumn": 4,
+                        "startOffset": 553,
+                        "endColumn": 45,
+                        "endOffset": 594
+                    }
                 }
             },
             {
@@ -162,7 +239,14 @@
                     "endOffset": 690
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 14,
+                        "startColumn": 4,
+                        "startOffset": 600,
+                        "endColumn": 45,
+                        "endOffset": 641
+                    }
                 }
             },
             {
@@ -174,7 +258,14 @@
                     "endOffset": 736
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 12,
+                        "startColumn": 4,
+                        "startOffset": 506,
+                        "endColumn": 45,
+                        "endOffset": 547
+                    }
                 }
             },
             {
@@ -186,7 +277,14 @@
                     "endOffset": 778
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 22,
+                        "startColumn": 4,
+                        "startOffset": 951,
+                        "endColumn": 41,
+                        "endOffset": 988
+                    }
                 }
             },
             {
@@ -198,7 +296,14 @@
                     "endOffset": 817
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 16,
+                        "startColumn": 4,
+                        "startOffset": 692,
+                        "endColumn": 38,
+                        "endOffset": 726
+                    }
                 }
             },
             {
@@ -210,7 +315,14 @@
                     "endOffset": 864
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 5,
+                        "startColumn": 4,
+                        "startOffset": 161,
+                        "endColumn": 46,
+                        "endOffset": 203
+                    }
                 }
             },
             {
@@ -222,7 +334,14 @@
                     "endOffset": 910
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 209,
+                        "endColumn": 45,
+                        "endOffset": 250
+                    }
                 }
             },
             {
@@ -234,7 +353,14 @@
                     "endOffset": 952
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 19,
+                        "startColumn": 4,
+                        "startOffset": 818,
+                        "endColumn": 41,
+                        "endOffset": 855
+                    }
                 }
             },
             {
@@ -246,7 +372,14 @@
                     "endOffset": 1002
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 8,
+                        "startColumn": 4,
+                        "startOffset": 303,
+                        "endColumn": 49,
+                        "endOffset": 348
+                    }
                 }
             },
             {
@@ -258,7 +391,14 @@
                     "endOffset": 1048
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 7,
+                        "startColumn": 4,
+                        "startOffset": 256,
+                        "endColumn": 45,
+                        "endOffset": 297
+                    }
                 }
             },
             {
@@ -270,7 +410,14 @@
                     "endOffset": 1097
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 9,
+                        "startColumn": 4,
+                        "startOffset": 354,
+                        "endColumn": 48,
+                        "endOffset": 398
+                    }
                 }
             },
             {
@@ -282,7 +429,14 @@
                     "endOffset": 1150
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\strings.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\strings.xml",
+                    "position": {
+                        "startLine": 10,
+                        "startColumn": 4,
+                        "startOffset": 404,
+                        "endColumn": 52,
+                        "endOffset": 452
+                    }
                 }
             },
             {
@@ -295,7 +449,15 @@
                     "endOffset": 1441
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\styles.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 6,
+                        "startColumn": 4,
+                        "startOffset": 192,
+                        "endLine": 12,
+                        "endColumn": 12,
+                        "endOffset": 484
+                    }
                 }
             },
             {
@@ -308,7 +470,15 @@
                     "endOffset": 1601
                 },
                 "from": {
-                    "file": "D:\\Users\\ICUI4CU\\Android\\DWIN\\DWIN\\res\\values\\styles.xml"
+                    "file": "D:\\Users\\ICUI4CU\\Android\\TWIN\\DWIN\\res\\values\\styles.xml",
+                    "position": {
+                        "startLine": 15,
+                        "startColumn": 4,
+                        "startOffset": 525,
+                        "endLine": 17,
+                        "endColumn": 12,
+                        "endOffset": 682
+                    }
                 }
             }
         ]
