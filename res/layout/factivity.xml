@@ -8,35 +8,46 @@
 
     <LinearLayout
         android:orientation="horizontal"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_width="800px"
+        android:layout_height="480px"
         android:gravity="right"
         >
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="160px"
+            android:layout_height="480px"
             android:orientation="vertical"
-            android:gravity="center"
             >
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="160px"
+                android:layout_height="80px"
+                android:gravity="center"
                 android:text="OTIS"
-                android:textSize="60dp"/>
+                android:textSize="60dp"
+                android:id="@+id/nameCompany"/>
             <ImageView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="160px"
+                android:layout_height="170px"
+                android:id="@+id/arrowFlag"
                 android:src="@drawable/up"/>
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
+                android:layout_width="160px"
+                android:layout_height="230px"
+                android:gravity="center"
+                android:id="@+id/curFloor"
                 android:text="88"
                 android:textSize="120dp"/>
         </LinearLayout>
-        <VideoView
-            android:layout_width="850dp"
-            android:layout_height="640dp"
-            />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <VideoView
+                android:layout_width="640px"
+                android:layout_height="480px"
+                android:id="@+id/adsShow"
+                />
+        </LinearLayout>
+
     </LinearLayout>
 
     <LinearLayout
@@ -50,15 +61,15 @@
             android:orientation="vertical"
             >
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="星期一"
+                android:layout_width="160px"
+                android:layout_height="60px"
+                android:text="2016-4-4"
                 android:textSize="40dp"
                 android:gravity="center"/>
             <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="match_parent"
-                android:text="2016-4-4"
+                android:layout_width="160px"
+                android:layout_height="60px"
+                android:text="星期一"
                 android:textSize="40dp"
                 android:gravity="center"/>
         </LinearLayout>
@@ -67,8 +78,8 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
+                android:layout_width="640px"
+                android:layout_height="120px"
                 android:text="欢迎光临天津南奥电梯有限公司"
                 android:textSize="50dp"
                 android:gravity="center"

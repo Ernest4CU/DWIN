@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merger version="3"><dataSet config="main"><source path="D:\Users\ICUI4CU\Android\TWIN\DWIN\libs"><file name="android-support-v4.jar" path="D:\Users\ICUI4CU\Android\TWIN\DWIN\libs\android-support-v4.jar"/><file name="mips/libserialport.so" path="D:\Users\ICUI4CU\Android\TWIN\DWIN\libs\mips\libserialport.so"/></source></dataSet><dataSet config="debug"><source path="D:\Users\ICUI4CU\Android\TWIN\DWIN\build-types\debug\jniLibs"/></dataSet></merger>
