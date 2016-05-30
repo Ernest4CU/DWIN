@@ -3,6 +3,7 @@ package com.dwin.activity;
 import android.app.Activity;
 import android.app.Instrumentation;
 import android.content.Intent;
+import android.media.MediaPlayer;
 import android.net.Uri;
 import android.nfc.Tag;
 import android.os.Build;
@@ -58,18 +59,29 @@ public class FActivity extends Activity {
 
         timer = new Timer(true);
         timer.schedule(task,1000,1000);
+        adsShow.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
+            @Override
+            public void onCompletion(MediaPlayer mp) {
+                videoDisplay("/mnt/sdcard1/bell1.mp4");
+            }
+        });
         videThread = new Thread(new Runnable() {
             @Override
             public void run() {
-                Uri videoUri = Uri.parse("/mnt/sdcard1/bell2.mp4");
-                adsShow.setVideoURI(videoUri);
-                adsShow.start();
+                videoDisplay("/mnt/sdcard1/bell2.mp4");
             }
         });
         videThread.start();
     }
 
 
+
+    void videoDisplay(String str){
+//        Uri videoUri = Uri.parse("/mnt/sdcard1/bell2.mp4");
+        Uri videoUri = Uri.parse(str);
+        adsShow.setVideoURI(videoUri);
+        adsShow.start();
+    }
     TimerTask task = new TimerTask() {
         @Override
         public void run() {
