@@ -44,6 +44,7 @@
             <VideoView
                 android:layout_width="640px"
                 android:layout_height="480px"
+                android:layout_gravity="center"
                 android:id="@+id/adsShow"
                 />
         </LinearLayout>

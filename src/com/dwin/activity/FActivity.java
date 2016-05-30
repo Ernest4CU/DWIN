@@ -40,13 +40,15 @@ public class FActivity extends Activity {
     TextView curFloor;
     VideoView adsShow;
     int intCurFloor=0;
+    int intCurVideo=0;
+    String[] VideoAdd;
 //    Thread videThread;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.factivity);
         closeBar();//关闭导航栏Navigation Bar
-
+        setVideoAdd();
         DisplayMetrics dm=getResources().getDisplayMetrics();
         int w_screen = dm.widthPixels;
         int h_screen = dm.heightPixels;
@@ -62,13 +64,20 @@ public class FActivity extends Activity {
         adsShow.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
-                videoDisplay("/mnt/sdcard1/bell1.mp4");
+                if(++intCurVideo==3)
+                    intCurVideo=0;
+                videoDisplay(VideoAdd[intCurVideo]);
             }
         });
-        videoDisplay("/mnt/sdcard1/bell2.mp4");
+        videoDisplay(VideoAdd[0]);
     }
 
-
+    void setVideoAdd(){
+        VideoAdd = new String[3];
+        VideoAdd[0]="/mnt/sdcard1/bell.mp4";
+        VideoAdd[1]="/mnt/sdcard1/bell1.mp4";
+        VideoAdd[2]="/mnt/sdcard1/bell2.mp4";
+    }
 
     void videoDisplay(String str){
 //        Uri videoUri = Uri.parse("/mnt/sdcard1/bell2.mp4");
