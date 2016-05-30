@@ -40,7 +40,7 @@ public class FActivity extends Activity {
     TextView curFloor;
     VideoView adsShow;
     int intCurFloor=0;
-    Thread videThread;
+//    Thread videThread;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,13 +65,7 @@ public class FActivity extends Activity {
                 videoDisplay("/mnt/sdcard1/bell1.mp4");
             }
         });
-        videThread = new Thread(new Runnable() {
-            @Override
-            public void run() {
-                videoDisplay("/mnt/sdcard1/bell2.mp4");
-            }
-        });
-        videThread.start();
+        videoDisplay("/mnt/sdcard1/bell2.mp4");
     }
 
 
