@@ -20,7 +20,7 @@ public final class R {
         public static final int up=0x7f020002;
     }
     public static final class id {
-        public static final int action_settings=0x7f080014;
+        public static final int action_settings=0x7f080015;
         public static final int adsShow=0x7f080013;
         public static final int arrowFlag=0x7f080011;
         public static final int choose_baudRate_spinner=0x7f080001;
@@ -34,6 +34,7 @@ public final class R {
         public static final int sendButton=0x7f08000c;
         public static final int sendmsg=0x7f08000a;
         public static final int showmsg=0x7f080006;
+        public static final int textShow=0x7f080014;
         public static final int togBtnReciveDate=0x7f080008;
         public static final int togBtnSendDateType=0x7f08000b;
         public static final int togBtnSendPer1000ms=0x7f08000f;

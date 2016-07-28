@@ -26,12 +26,12 @@
                 android:id="@+id/nameCompany"/>
             <ImageView
                 android:layout_width="160px"
-                android:layout_height="170px"
+                android:layout_height="230px"
                 android:id="@+id/arrowFlag"
                 android:src="@drawable/up"/>
             <TextView
                 android:layout_width="160px"
-                android:layout_height="230px"
+                android:layout_height="170px"
                 android:gravity="center"
                 android:id="@+id/curFloor"
                 android:text="88"
@@ -79,6 +79,7 @@
             android:layout_height="match_parent"
             android:orientation="vertical">
             <TextView
+                android:id="@+id/textShow"
                 android:layout_width="640px"
                 android:layout_height="120px"
                 android:text="欢迎光临天津南奥电梯有限公司"

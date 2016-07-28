@@ -21,9 +21,11 @@ import android.widget.Toast;
 import android.widget.VideoView;
 
 import com.dwin.dwinapi.R;
+import com.dwin.dwinapi.SerialPort;
 
 import java.net.URI;
 import java.net.URL;
+import java.util.Date;
 import java.util.Timer;
 import java.util.TimerTask;
 import java.util.logging.Handler;
@@ -42,6 +44,8 @@ public class FActivity extends Activity {
     int intCurFloor=0;
     int intCurVideo=0;
     String[] VideoAdd;
+
+    TextView textShow;
 //    Thread videThread;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -58,6 +62,7 @@ public class FActivity extends Activity {
         arrowFlag = (ImageView) findViewById(R.id.arrowFlag);
         curFloor = (TextView) findViewById(R.id.curFloor);
         adsShow = (VideoView) findViewById(R.id.adsShow);
+        textShow = (TextView) findViewById(R.id.textShow);
 
         timer = new Timer(true);
         timer.schedule(task,1000,1000);
@@ -70,6 +75,7 @@ public class FActivity extends Activity {
             }
         });
         videoDisplay(VideoAdd[0]);
+        openSerialPort();
     }
 
     void setVideoAdd(){
@@ -145,4 +151,47 @@ public class FActivity extends Activity {
             e.printStackTrace();
         }
     }
+    SerialPort serialPort;
+
+    private void openSerialPort(){
+        serialPort = new SerialPort("S0", 9600, 8, 1,110);
+        new ReceiveThread().start();
+    }
+
+    /**
+     * 接收数据线程
+     */
+    class ReceiveThread extends Thread {
+        public void run() {
+            while (serialPort.isOpen) {
+                String type = "HEX".trim();
+                String data = serialPort.receiveData(type);
+                if (data != null) {
+                    Message msg = new Message();
+                    msg.what = 1;
+                    msg.obj = data;
+                    System.out.println(data + "<<<<<<<<==========data");
+                    myHandler.sendMessage(msg);
+                }
+                try {
+                    Thread.sleep(1000);
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            }
+        }
+    }
+
+    private android.os.Handler myHandler = new android.os.Handler() {
+        public void handleMessage(android.os.Message msg) {
+            switch (msg.what) {
+                case 1:
+                    Date date = new Date();
+                   textShow.setText((CharSequence) msg.obj);
+                    break;
+                default:
+                    break;
+            }
+        };
+    };
 }
