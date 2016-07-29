@@ -64,8 +64,8 @@ public class FActivity extends Activity {
         adsShow = (VideoView) findViewById(R.id.adsShow);
         textShow = (TextView) findViewById(R.id.textShow);
 
-        timer = new Timer(true);
-        timer.schedule(task,1000,1000);
+//        timer = new Timer(true);
+//        timer.schedule(task,1000,1000);
         adsShow.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
             @Override
             public void onCompletion(MediaPlayer mp) {
@@ -164,7 +164,7 @@ public class FActivity extends Activity {
     class ReceiveThread extends Thread {
         public void run() {
             while (serialPort.isOpen) {
-                String type = "HEX".trim();
+                String type = "ASCII".trim();
                 String data = serialPort.receiveData(type);
                 if (data != null) {
                     Message msg = new Message();
@@ -187,7 +187,28 @@ public class FActivity extends Activity {
             switch (msg.what) {
                 case 1:
                     Date date = new Date();
-                   textShow.setText((CharSequence) msg.obj);
+                    String test = (String) msg.obj;
+                    char[] demo = test.toCharArray();
+                    if(demo.length>2){
+                        curFloor.setText(new String(demo,0,2));
+                        switch (demo[2]){
+                            case 'U':arrowFlag.setImageResource(R.drawable.up);break;
+                            case 'D':arrowFlag.setImageResource(R.drawable.down);break;
+                            default:break;
+                        }
+//                        curFloor.setText(demo[0]+demo[1]+"");
+//                        if(demo[1]>0){
+//                            arrowFlag.setImageResource(R.drawable.up);
+//                        }else {
+//                            arrowFlag.setImageResource(R.drawable.down);
+//                        }
+                    }
+//                    if(demo[0]==0x33){
+//                        textShow.setText((CharSequence) msg.obj);
+//                    }else{
+//                        textShow.setText("数据无效");
+//                    }
+
                     break;
                 default:
                     break;
