@@ -2,12 +2,14 @@ package com.dwin.activity;
 
 import android.app.Activity;
 import android.app.Instrumentation;
+import android.content.Context;
 import android.content.Intent;
 import android.media.MediaPlayer;
 import android.net.Uri;
 import android.nfc.Tag;
 import android.os.Build;
 import android.os.Bundle;
+import android.os.Handler;
 import android.os.Message;
 import android.os.Messenger;
 import android.text.format.Time;
@@ -23,15 +25,24 @@ import android.widget.VideoView;
 import com.dwin.dwinapi.R;
 import com.dwin.dwinapi.SerialPort;
 
+import org.apache.http.util.EncodingUtils;
+
+import java.io.FileInputStream;
+import java.io.IOException;
+import java.net.InetAddress;
+import java.net.ServerSocket;
+import java.net.Socket;
 import java.net.URI;
 import java.net.URL;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.Timer;
+
 import java.util.TimerTask;
-import java.util.logging.Handler;
+
 import java.util.logging.LogRecord;
 import java.util.logging.MemoryHandler;
-
 
 
 public class FActivity extends Activity {
@@ -40,15 +51,19 @@ public class FActivity extends Activity {
     Timer timer;
     ImageView arrowFlag;
     TextView curFloor;
+    TextView curdate;
+    TextView dayOfWeek;
     VideoView adsShow;
     int intCurFloor=0;
     int intCurVideo=0;
     String[] VideoAdd;
 
+    String advertising="广告测试广告测试广告测试广告测试广告测试广告测试广告测试广告测试广告测试广告测试";
     TextView textShow;
 //    Thread videThread;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.factivity);
         closeBar();//关闭导航栏Navigation Bar
@@ -63,7 +78,14 @@ public class FActivity extends Activity {
         curFloor = (TextView) findViewById(R.id.curFloor);
         adsShow = (VideoView) findViewById(R.id.adsShow);
         textShow = (TextView) findViewById(R.id.textShow);
-
+        curdate = (TextView) findViewById(R.id.curdate);
+        dayOfWeek = (TextView) findViewById(R.id.dayOfWeek);
+        try {
+            advertising=readFileSdcardFile("/mnt/sdcard1/advertising.txt");
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        textShow.setText(advertising);
 //        timer = new Timer(true);
 //        timer.schedule(task,1000,1000);
         adsShow.setOnCompletionListener(new MediaPlayer.OnCompletionListener() {
@@ -76,11 +98,117 @@ public class FActivity extends Activity {
         });
         videoDisplay(VideoAdd[0]);
         openSerialPort();
+        //textShow.setSelected(true);//ap断连问题出现于此
+        //new Thread(runnable).start();//启动服务器线程
+        new downThread().start();
+        new TimeThread().start(); //启动新的线程
     }
 
+    //读SD中的文件
+    public String readFileSdcardFile(String fileName) throws IOException {
+        String res = "";
+        try {
+            FileInputStream fin = new FileInputStream(fileName);
+
+            int length = fin.available();
+
+            byte[] buffer = new byte[length];
+            fin.read(buffer);
+
+            res = EncodingUtils.getString(buffer, "gb2312");
+
+            fin.close();
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return res;
+    }
+        class downThread extends Thread{
+        @Override
+        public void run() {
+            //服务器中信息
+            try {
+                ServerSocket serverSocket = new ServerSocket(8888);
+                Socket socket = null;
+                int count=0;
+                System.out.println("***服务器即将启动，等待客户端的连接***");
+                while (true) {
+                    socket = serverSocket.accept();
+                    DownloadThread downloadThread = new DownloadThread(socket);
+                    downloadThread.start();
+                    count++;//用来记录客户量
+                    InetAddress address = socket.getInetAddress();
+                    System.out.println("客户端IP = " + address.getHostAddress());
+                    System.out.println("客户量 = " + count);
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    }
+
+    class TimeThread extends Thread {
+        @Override
+        public void run() {
+            do {
+                try {
+                    Thread.sleep(1000);
+                    Message msg = new Message();
+                    msg.what = 1;  //消息(一个整型值)
+                    mHandler1.sendMessage(msg);// 每隔1秒发送一个msg给mHandler
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+                }
+            } while (true);
+        }
+    }
+    String[] weeks={"星期一","星期二","星期三","星期四","星期五","星期六","星期日"};
+    //在主线程里面处理消息并更新UI界面
+    private android.os.Handler mHandler1 = new Handler(){
+        @Override
+        public void handleMessage(Message msg) {
+            //super.handleMessage(msg);
+            switch (msg.what) {
+                case 1:
+                    SimpleDateFormat sDateFormat    =   new    SimpleDateFormat("yyyy-MM-dd hh:mm:ss");
+                    String    date    =    sDateFormat.format(new java.util.Date()).substring(0,10);
+                    int DayOfWeek= Calendar.DAY_OF_WEEK;
+                    curdate.setText(date); //更新时间
+                    dayOfWeek.setText(weeks[DayOfWeek-1]);
+                    break;
+                default:
+                    break;
+            }
+        }
+    };
+
+    Runnable runnable = new Runnable() {
+        @Override
+        public void run() {
+            try {
+                ServerSocket serverSocket = new ServerSocket(8888);
+                Socket socket = null;
+                int count=0;
+                System.out.println("***服务器即将启动，等待客户端的连接***");
+                while (true) {
+                    socket = serverSocket.accept();
+                    DownloadThread downloadThread = new DownloadThread(socket);
+                    downloadThread.start();
+                    count++;//用来记录客户量
+                    InetAddress address = socket.getInetAddress();
+                    System.out.println("客户端IP = " + address.getHostAddress());
+                    System.out.println("客户量 = " + count);
+                }
+
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+    };
     void setVideoAdd(){
         VideoAdd = new String[3];
-        VideoAdd[0]="/mnt/sdcard1/bell.mp4";
+        VideoAdd[0]="/mnt/sdcard1/bell0.mp4";
         VideoAdd[1]="/mnt/sdcard1/bell1.mp4";
         VideoAdd[2]="/mnt/sdcard1/bell2.mp4";
     }

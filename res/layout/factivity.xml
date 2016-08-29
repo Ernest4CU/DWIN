@@ -62,14 +62,16 @@
             android:orientation="vertical"
             >
             <TextView
+                android:id="@+id/curdate"
                 android:layout_width="160px"
                 android:layout_height="60px"
                 android:text="2016-4-4"
-                android:textSize="40dp"
+                android:textSize="35dp"
                 android:gravity="center"/>
             <TextView
                 android:layout_width="160px"
                 android:layout_height="60px"
+                android:id="@+id/dayOfWeek"
                 android:text="星期一"
                 android:textSize="40dp"
                 android:gravity="center"/>
@@ -82,7 +84,10 @@
                 android:id="@+id/textShow"
                 android:layout_width="640px"
                 android:layout_height="120px"
-                android:text="欢迎光临天津南奥电梯有限公司"
+                android:ellipsize="marquee"
+                android:singleLine="true"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:text="欢迎光临天津南奥电梯有限公司欢迎光临天津南奥电梯有限公司"
                 android:textSize="50dp"
                 android:gravity="center"
                 />
